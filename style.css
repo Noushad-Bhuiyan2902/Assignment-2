@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.quicksand-normal {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+nav{
+    display: flex;
+    padding: 1.25rem 8.8125rem 0 8.8125rem;
+    justify-content: space-between;
+    align-content: center;
+}
+.Logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.1rem;
+}
+.Menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.btn-primary{
+    width: 12.3125rem;
+    height: 3.125rem;
+    border-radius: 0.75rem;
+    padding: 0.625rem;
+}
+#Contact{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: medium;
+    background-color: orange;
+}
+#icon-style{
+    display: none;
+}
+
+@media only screen and (max-width: 450px) {
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px orange solid;
+        padding: 1.25rem 1rem 1rem 1rem;
+    }
+    .Logo h1, 
+    .Menu,
+    #Contact{
+        display: none;
+    }
+    #icon-style{
+        display: inline;
+        width: 1.875rem;
+        height: 1.875rem;
+        margin-top: 2px;
+    }
+    .Logo img{
+        width: 2.875rem;
+        height: 2.875rem;
+    }
+    
+    
+}
