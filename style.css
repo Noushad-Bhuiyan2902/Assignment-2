@@ -132,7 +132,7 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin: 1.8rem auto;
+    margin: 30px auto;
 }
 .angle{
     display: flex;
@@ -145,8 +145,108 @@ nav{
     align-items: center;
     border-radius: 50%;
     color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background-image: linear-gradient(to top, rgb(254, 163, 1, 30%), white), url("assets/bg.png");
+    background-blend-mode: multiply;
     
 }
+.wrapper{
+    display: flex;
+    gap: 2.1rem;
+    justify-content: center;
+    align-items: center;
+    padding: auto 141px;
+    margin-bottom: 5rem;
+}
+.container-2{
+    position: relative;
+}
+.container-2 img{
+    width: 540px;
+    height: 337px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.legendary{
+  position: absolute;
+  bottom: -15px;
+  left: 20%;
+  transform: translateX(-50%);
+  background-color: #168bbd;
+  padding: 12px 18px;
+  font-size: medium;
+  font-weight: bold;
+  color: #ffffff;
+  border: 1px solid #383030;
+  border-radius: 48px;
+}
+.box-1{
+    width: 34.8rem;
+    height: 39.408rem;
+    border-radius: 16px;
+    background-color: white;
+}
+.box-1 h3{
+    margin: 50px 99px 51px 38px;
+    font-size: larger;
+}
+.box-1 p{
+    margin: 47px 68px 34px 38px;
+    font-size: medium;
+    font-weight: 15.34px;
+}
+.box-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 37.563rem;
+    height: 38.9rem;
+    gap: 10px;
+}
+.grid-card{
+    width: 18.168rem;
+    height: 18.851rem;
+    background-color: white;
+    border-radius: 16px;
+}
+.grid-card div{
+    position: relative;
+}
+.grid-card legend{
+  position: absolute;
+  bottom: -15px;
+  left: 40%;
+  transform: translateX(-50%);
+  padding: 7px 11px;
+  font-size: medium;
+  font-weight: bold;
+  color: white;
+  border: 1px solid #383030;
+  border-radius: 48px;
+}
+.grid-card img{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.grid-card h3{
+    font-size: 0.9rem;
+    margin: 38px 38px 28px 38px;
+}
+
+
+#btn-2{
+    background-color: black;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: medium;
+    margin-bottom: 60px;
+}
+
 
 @media screen and (max-width: 450px) {
     body{
@@ -243,5 +343,42 @@ nav{
     .Arrow{
         display: none;
     }
+    .box-1{
+        display: none;
+    }
+    .wrapper{
+        justify-content: center;
+        align-items: center;
+        padding: auto 16px;
+    }
+    .box-2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 22.336rem;
+        height: auto;
+        gap: 10px;
+    }
+    .grid-card{
+        width: 173.35px;
+        height: 179.59px;
+    }
+    .grid-card legend{
+        padding: 5px 5px;
+        font-size: 0.5rem;
+        bottom: -7.5px;
+        font-weight: bold;
+        color: white;
+        border: 1px solid #383030;
+        border-radius: 48px;
+      }
+      .grid-card img{
+          width: 100%;
+          border-top-left-radius: 16px;
+          border-top-right-radius: 16px;
+      }
+      .grid-card h3{
+          font-size: 0.6rem;
+          margin: 20px 32.6px 20px 22.57px;
+      }
     
 }
