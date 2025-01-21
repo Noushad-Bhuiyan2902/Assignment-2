@@ -127,21 +127,40 @@ nav{
     text-decoration: none;
     font-weight: bold;
 }
+.Arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.8rem auto;
+}
+.angle{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-color: orange;
+    font-size: 3rem;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    
+}
 
 @media screen and (max-width: 450px) {
     body{
         overflow-x:hidden;
         width: 100%;
+        height: auto;
         margin: 0;
         padding: 0;
     }
     nav{
+        max-width: 450px;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        padding: 1rem 1.8rem;
         border-bottom: 1px orange solid;
-        gap: 17.5rem;
-        padding-bottom: 1rem;
     }
     .Logo h1, 
     .Menu,
@@ -153,7 +172,7 @@ nav{
         width: 1.875rem;
         height: 1.875rem;
         margin-top: 2px;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     .Logo img{
         width: 2.875rem;
@@ -161,13 +180,13 @@ nav{
     }
     
     .banner{
-        padding: 1.25rem 0 1rem 0;
+        padding: 1.25rem auto;
         display: flex;
         flex-direction: column-reverse;
         margin: auto;
     }
     .banner img{
-        width: 21.036rem;
+        width:22rem;
         height: 25.813rem;
         margin: 1.5rem 0;
     }
@@ -193,12 +212,16 @@ nav{
         height: 3rem;
     }
     .curriculum{
+        width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .cardholder{
+        width: 98%;
+        height: auto;
         padding: 1.25rem 0.1rem 1rem 0.1rem;
         padding: 0;
         display:flex;
@@ -208,14 +231,17 @@ nav{
         gap: 1.5rem;
     }
     .card{
-        width: 22rem;
-        height: 25rem;
+        width: 90%;
+        height: 33%;
         padding: 0;
     }
     .card img{
         width: 8.25rem;
         height: 8.45rem;
         margin: 1.2rem auto;
+    }
+    .Arrow{
+        display: none;
     }
     
 }
