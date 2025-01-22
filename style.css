@@ -246,6 +246,38 @@ nav{
     font-size: medium;
     margin-bottom: 60px;
 }
+footer{
+    background-color: #168bbd;
+    color: white;
+    display: flex;
+    justify-content:flex-start;
+    padding: 123px 141px;
+}
+.intro{
+    margin-right: 175px ;
+}
+.intro p{
+    width: 400px;
+}
+#sub{
+    display: flex;
+    gap: 11px;
+    margin-bottom: 36px;
+}
+.about{
+    margin-right: 150px;
+}
+.about ul{
+    list-style: none;
+}
+ul li{
+    margin-top: 17px;
+}
+.online div{
+    display: flex;
+    gap: 11px;
+    margin-top: 8px;
+}
 
 
 @media screen and (max-width: 450px) {
@@ -380,5 +412,42 @@ nav{
           font-size: 0.6rem;
           margin: 20px 32.6px 20px 22.57px;
       }
+      #btn-2{
+        height: 3rem;
+        padding: 0.5rem;
+        font-weight: 600;
+        font-size: large;
+        border-radius: 25px;
+    }
+      footer{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+      }
+    
+    .intro{
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+        padding: 1rem;
+    }
+    .intro p{
+        width: 351px;
+        height: 80px;
+    }
+    #sub{
+        display: flex;
+        gap: 11px;
+        margin-bottom: 36px;
+    }
+    .about{
+        padding: 1rem;
+    }
+    .online{
+        padding: 1rem;
+    }
+    .online h2{
+        margin-bottom: 3rem;
+    }
     
 }
