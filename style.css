@@ -449,5 +449,8 @@ ul li{
     .online h2{
         margin-bottom: 3rem;
     }
+    .online div{
+        margin-bottom: 3rem;
+    }
     
 }
